@@ -120,7 +120,9 @@ white: EEEEEE*/
     align-items: center;
     text-align: left;
 }
-
+.eduName{
+    width: 50%;
+}
 .educationElement div {
     margin: 10px;
 }
