@@ -20,7 +20,7 @@
             <div class="heroText">
                 <p>I'm</p>
                 <p>Jai Chandwani</p>
-                <p>Front-end Developer || Web Developer</p>
+                <p><span id="tat"></span></p>
                 <button class="resumeDownloadButton"><a href="Jai's Resume.pdf" download>Resume</a></button>
             </div>
         </section>
@@ -167,6 +167,19 @@
                 x.className = "navbarContainer"
             }
         }
+    </script>
+     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+    <!-- Setup and start animation! -->
+    <script>
+      var typed = new Typed('#tat', {
+        strings: ['Web Developer', 'Coder','Web Designer'],
+        loop:true,
+        typeSpeed: 100,
+        backSpeed:50,
+        backDelay:1000,
+  
+      });
     </script>
 </body>
 
