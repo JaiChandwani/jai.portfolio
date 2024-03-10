@@ -14,3 +14,13 @@ submit.addEventListener('click',()=>{
         alert("Submitted")
     },2000)
 })
+
+let dayNight = document.querySelector(".dayNight");
+let main = document.querySelector(".main");
+let banner = document.querySelector(".banner");
+
+dayNight.addEventListener("click",()=>{
+    banner.classList.toggle("night");
+    main.classList.toggle("night");
+})
+    
