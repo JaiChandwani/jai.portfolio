@@ -1,0 +1,170 @@
+@media screen and (max-width:600px) {
+    * {
+        overflow-x: hidden;
+    }
+
+    .banner {
+        padding: 0px;
+        height: 70vh;
+    }
+
+    .design {
+        width: 58%;
+        height: 58%;
+        transform: rotate(-22deg);
+        right: 170px;
+
+    }
+
+    .content h2 {
+        font-size: 2.2rem;
+        padding: 0px 0px 0px 10px;
+    }
+
+    .content p {
+        font-style: 1.2rem;
+        color: #666;
+        padding: 0px 50px;
+        transition: 0.5s;
+    }
+
+    .content button {
+        position: relative;
+        background: orange;
+        color: #fff;
+        border: none;
+        outline: none;
+        padding: 15px 15x;
+        font-style: 1.25rem;
+        letter-spacing: 0.05rem;
+        margin-right: 20px;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: 0.5s;
+        font-weight: 600;
+    }
+
+    /* old commit */
+    .sectionHeading {
+        margin: 50px 0px;
+        position: relative;
+        width: 100%;
+      transform: translate(-40%);
+        font-size: 2.2rem;
+    }
+
+    .sectionTextbox {
+        padding: 0px 1px;
+        font-size: 12px;
+        position: relative;
+        right: 19%;
+        width: 100%;
+        font-size: 1rem;
+        padding:0px 20px;
+    }
+
+    /* navigation bar */
+    .navbarContainer {
+        height: 60px;
+    }
+
+    .navbarContainer ul li:not(:nth-child(1)) {
+        visibility: hidden;
+    }
+
+    .navbarContainer ul li:nth-child(6) {
+        visibility: visible;
+        position: absolute;
+        right: 0;
+    }
+
+    .navbarContainer ul li:hover {
+        background-color: transparent;
+    }
+
+    .toggleButton {
+        background-color: #393E46;
+        border: 2px solid orange;
+        color: orange;
+        border-radius: 7px;
+        width: 25px;
+        height: 25px;
+    }
+
+    .navbarContainer.responsive {
+        height: fit-content;
+    }
+
+    .navbarContainer.responsive ul {
+        overflow-y: hidden;
+    }
+
+    .navbarContainer.responsive ul li {
+        visibility: visible;
+        display: inline;
+        float: none;
+        padding: 20px;
+        width: 100%;
+    }
+
+    .navbarContainer.responsive ul li:hover {
+        background-color: transparent;
+    }
+
+    .navbarContainer.responsive ul li a {
+        margin-left: 20px;
+        display: block;
+        text-align: left;
+    }
+
+    .navbarContainer.responsive ul li:nth-child(1) {
+        visibility: hidden;
+    }
+
+    .navbarContainer.responsive .toggleButton {
+        position: fixed;
+        top: 20px;
+        right: 20px;
+    }
+
+    /* about section */
+    .aboutMeText {
+        text-align: initial;
+    }
+
+    /* educationSection */
+    .educationElement {
+        display: flex;
+        flex-direction: column;
+        align-items: baseline;
+        text-align: left;
+    }
+
+    /* contact */
+    .sectionTextbox form {
+        width: 90%;
+    }
+
+    .sectionTextbox form input {
+        margin: 1px;
+        padding: 5px;
+    }
+
+    .submitButton {
+        margin-top: 20px;
+        width: 30%;
+    }
+
+    /* footer */
+    footer {
+        height: 20vh;
+    }
+
+    footer div {
+        font-size: 12px;
+        position: relative;
+        top: 50%;
+        left: 40%;
+        transform: translate(-10%, -50%);
+    }
+}
