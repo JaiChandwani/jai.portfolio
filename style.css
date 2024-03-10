@@ -8,7 +8,7 @@
     scroll-behavior: smooth;
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
-    
+
 }
 
 .banner {
@@ -45,12 +45,12 @@
     font-size: 5.5rem;
     color: #333;
     transition: 1s;
-    
+
 }
 
 .content h2 span {
     color: orange;
-    
+
 }
 
 .content p {
@@ -88,6 +88,80 @@
 #chat a {
     color: #333;
 }
+
+
+.dayNight {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    width: 60px;
+    height: 60px;
+    background-color: #f0f0f0;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.5s;
+    font-size: 2rem;
+}
+
+.dayNight ion-icon:nth-child(2) {
+    display: none;
+}
+
+.main.night .dayNight ion-icon:nth-child(1) {
+    display: none;
+}
+
+.main.night .dayNight ion-icon:nth-child(2) {
+    display: block;
+}
+
+.main.night {
+    background: #333;
+}
+
+.main.night .dayNight {
+    color: #fff;
+    background: #444;
+}
+
+.main.night header .logo,
+.main.night .content h2,
+.main.night .content p,
+.main.night .content button#chat a,
+.main.night header ul li a {
+    color: #fff;
+}
+
+/* banner */
+.banner.night .dayNight ion-icon:nth-child(1) {
+    display: none;
+}
+
+.banner.night .dayNight ion-icon:nth-child(2) {
+    display: block;
+}
+
+.banner.night {
+    background: #333;
+}
+
+.banner.night .dayNight {
+    color: #fff;
+    background: #444;
+}
+
+.banner.night header .logo,
+.banner.night .content h2,
+.banner.night .content p,
+.banner.night .content button.chat,
+.banner.night header ul li a,
+.main.night .sectionTextbox {
+    color: #fff;
+}
+
 
 /* old commit */
 
@@ -249,4 +323,3 @@ footer div {
     left: 50%;
     transform: translate(-10%, -50%);
 }
-
